@@ -3,7 +3,7 @@
 #include <iomanip>
 
 
-int main() {
+int Bit_operation() {
 	setlocale(LC_ALL, "Rus");
 
 	unsigned int x, i;

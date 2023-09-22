@@ -130,6 +130,8 @@
     <ClCompile Include="BasicsOfProgramming.cpp" />
     <ClCompile Include="Homework1.cpp" />
     <ClCompile Include="Homework2.cpp" />
+    <ClCompile Include="Homework3.cpp" />
+    <ClCompile Include="Homework4.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

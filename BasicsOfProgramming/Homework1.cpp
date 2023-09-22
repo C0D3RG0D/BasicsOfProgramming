@@ -7,15 +7,15 @@ int AreaCircle()
 {
     setlocale(LC_ALL, "RUS");
     double R, S;
-    std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã°Ã Ã¤Ã¨Ã³Ã±\n";
+    std::cout << "Ââåäèòå ðàäèóñ\n";
     std::cin >> R;
 
     if (R > 0 and R < 100) {
         S = R * R * M_PI;
-        std::cout << std::setprecision(9) << "ÃÃ«Ã®Ã¹Ã Ã¤Ã¼ ÃªÃ°Ã³Ã£Ã  Ã°Ã Ã¢Ã­Ã : " << S;
+        std::cout << std::setprecision(9) << "Ïëîùàäü êðóãà ðàâíà: " << S;
     }
     else {
-        std::cout << "ÃÃ Ã¤Ã¨Ã³Ã± Ã¤Ã®Ã«Ã¦Ã¥Ã­ Ã­Ã ÃµÃ®Ã¤Ã¨Ã²Ã¼Ã±Ã¿ Ã¢ Ã¤Ã¨Ã Ã¯Ã®Ã§Ã®Ã­Ã¥ Ã®Ã² 1 Ã¤Ã® 100!!! (0 < R < 100)";
+        std::cout << "Ðàäèóñ äîëæåí íàõîäèòüñÿ â äèàïîçîíå îò 1 äî 100!!! (0 < R < 100)";
         return 1;
     }
 
