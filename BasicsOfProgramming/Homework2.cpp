@@ -3,25 +3,25 @@
 #include <iomanip>
 
 
-int Bit_operation() {
+int Lab2() {
 	setlocale(LC_ALL, "Rus");
 
 	unsigned int x, i;
 	
 
-	std::cout << "Ââåäèòå ÷èñëî (0 < x < 10^9): " << std::endl;
+	std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã® (0 < x < 10^9): " << std::endl;
 	std::cin >> x;
-	std::cout << "Ââåäèòå áèò, êîòîðûé íóæíî çàìåíèòü íà 1 (0 < i < 31): " << std::endl;
+	std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¡Ã¨Ã², ÃªÃ®Ã²Ã®Ã°Ã»Ã© Ã­Ã³Ã¦Ã­Ã® Ã§Ã Ã¬Ã¥Ã­Ã¨Ã²Ã¼ Ã­Ã  1 (0 < i < 31): " << std::endl;
 	std::cin >> i;
 
 	if (i < 0 || i > 31) {
-		std::cout << "Îøèáêà. i äîëæíî áûòü â äèàïîçîíå 0 < i < 31" << std::endl;
+		std::cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ . i Ã¤Ã®Ã«Ã¦Ã­Ã® Ã¡Ã»Ã²Ã¼ Ã¢ Ã¤Ã¨Ã Ã¯Ã®Ã§Ã®Ã­Ã¥ 0 < i < 31" << std::endl;
 		return 1;
 	}
 
 	x = x | (1 << i);
 
-	std::cout << "Ðåçóëüòàò: " << x << std::endl;
+	std::cout << "ÃÃ¥Ã§Ã³Ã«Ã¼Ã²Ã Ã²: " << x << std::endl;
 
 	return 0;
 }
