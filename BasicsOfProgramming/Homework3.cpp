@@ -2,19 +2,19 @@
 
 int Lab3() {
 
-	// Г‡Г Г¤Г Г­ГЁГҐ 1
+	// Задание 1
 
 	setlocale(LC_ALL, "Rus");
 
 	int a, b, c;
 	
-	std::cout << "Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г® A: " << std::endl;
+	std::cout << "Введите число A: " << std::endl;
 	std::cin >> a;
 
-	std::cout << "Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г® B: " << std::endl;
+	std::cout << "Введите число B: " << std::endl;
 	std::cin >> b;
 
-	std::cout << "Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г® C: " << std::endl;
+	std::cout << "Введите число C: " << std::endl;
 	std::cin >> c;
 
 	if ((a + b) % c == 0 && c % b == 0) {
@@ -27,44 +27,45 @@ int Lab3() {
 		std::cout << a - b + c << std::endl;
 	}
 
-	// Г‡Г Г¤Г Г­ГЁГҐ 2
+	// Задание 2
 
 	short n;
 
-	std::cout << "Г‚ГўГҐГ¤ГЁГҐГІ ГЄГ®Г¤ Г®ГёГЁГЎГЄГЁ (0, 1, 2, 3): " << std::endl;
+	std::cout << "Введиет код ошибки (0, 1, 2, 3): " << std::endl;
 	std::cin >> n;
 
 	switch (n) 
 	{
 		case 0:
-			std::cout << "ГЋГёГЁГЎГ®ГЄ Г­ГҐГІ" << std::endl;
+			std::cout << "Ошибок нет" << std::endl;
 			break;
 
 		case 1:
-			std::cout << "ГЋГёГЁГЎГЄГ  Г·ГІГҐГ­ГЁГї ГґГ Г©Г«Г " << std::endl;
+			std::cout << "Ошибка чтения файла" << std::endl;
 			break;
 
 		case 2:
-			std::cout << "ГЋГёГЁГЎГЄГ  Г§Г ГЇГЁГ±ГЁ ГґГ Г©Г«Г " << std::endl;
+			std::cout << "Ошибка записи файла" << std::endl;
 			break;
 
 		case 3:
-			std::cout << "ГЌГҐ ГўГ±ГҐ ГЇГ®Г«Гї Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г»" << std::endl;
+			std::cout << "Не все поля определены" << std::endl;
 			break;
 
 		default:
-			std::cout << "ГЋГёГЁГЎГЄГ  Г± ГІГ ГЄГЁГ¬ ГЄГ®Г¤Г®Г¬ Г®ГІГ±ГіГІГ±ГІГўГіГҐГІ" << std::endl;
+			std::cout << "Ошибка с таким кодом отсутствует" << std::endl;
 			break;
 	}
 
-	//Г‡Г Г¤Г Г­ГЁГҐ 3
+	//Задание 3
 
 	short x;
 
-	std::cout << "Г‚ГўГҐГ¤ГІГЁГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ x (1 ГЁГ«ГЁ -1): " << std::endl;
+	std::cout << "Введтие значение x (1 или -1): " << std::endl;
 	std::cin >> x;
 
-	std::cout << (x == 1 ? "Positive Number" : (x == -1) ? "Negative Number" : "Error! x = 1 or x = -1!") << std::endl;
+
+	std::cout << (x == 1 ? "Positive Number" : (x == -1) ? "Negative Number" : "Ошибка! x принимает только значения 1 или -1") << std::endl;
 
 	return 0;
 }
